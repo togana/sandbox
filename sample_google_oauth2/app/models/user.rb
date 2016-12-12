@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
 
     unless user
       user = User.create(name:     auth.info.name,
+                         email:    auth.info.email,
                          provider: auth.provider,
                          uid:      auth.uid,
                          token:    auth.credentials.token,
