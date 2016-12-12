@@ -20,6 +20,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string   :last_sign_in_ip
 
       ## oauth
+      t.string :name
       t.string :provider
       t.string :uid
       t.string :token
