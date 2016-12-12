@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  devise :trackable, :omniauthable, omniauth_providers: %i(google)
+  devise :database_authenticatable, :trackable, :omniauthable, omniauth_providers: %i(google)
 
   protected
   def self.find_for_google(auth)
