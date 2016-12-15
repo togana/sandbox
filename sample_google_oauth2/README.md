@@ -12,7 +12,7 @@ export GOOGLE_SECRET=**************
 
 ```
 $ bundle install -j4 --path vendor/bundle
-$ bundle exec rake db:migrate
+$ bundle exec rails db:migrate
 $ bundle exec rails s
 ```
 
