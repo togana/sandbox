@@ -1,24 +1,23 @@
-# README
+devise + omniauth-google-oauth2を用いたサインイン
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 環境変数の設定
 
-Things you may want to cover:
+```
+export GOOGLE_ID=*************
+export GOOGLE_SECRET=**************
+```
 
-* Ruby version
+## 実行方法
 
-* System dependencies
+```
+$ bundle install -j4 --path vendor/bundle
+$ bundle exec rake db:migrate
+$ bundle exec rails s
+```
 
-* Configuration
+## アクセス
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+http://localhost:3000/home/index
+```
